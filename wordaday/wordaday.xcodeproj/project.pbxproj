@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8929122028D2C75C00911B6C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929121F28D2C75C00911B6C /* API.swift */; };
+		8929122328D2C8C000911B6C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8929122228D2C8C000911B6C /* Alamofire */; };
+		8929122528D2C9BE00911B6C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929122428D2C9BE00911B6C /* Endpoint.swift */; };
+		8929122828D2CE9300911B6C /* DefinitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929122728D2CE9300911B6C /* DefinitionDTO.swift */; };
+		893B81CA29248ECA00EA0A81 /* DateGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 893B81C929248ECA00EA0A81 /* DateGrid */; };
+		893B87E928DD64340093F32F /* WordOfTheDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B87E828DD64340093F32F /* WordOfTheDayDTO.swift */; };
+		8944E2FA28C419A2002A4F14 /* wordadayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944E2F928C419A2002A4F14 /* wordadayApp.swift */; };
+		8944E2FE28C419A4002A4F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944E2FD28C419A4002A4F14 /* Assets.xcassets */; };
+		8944E30128C419A4002A4F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944E30028C419A4002A4F14 /* Preview Assets.xcassets */; };
+		8944E30B28C419A4002A4F14 /* wordadayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944E30A28C419A4002A4F14 /* wordadayTests.swift */; };
+		8944E31528C419A4002A4F14 /* wordadayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944E31428C419A4002A4F14 /* wordadayUITests.swift */; };
+		8944E31728C419A4002A4F14 /* wordadayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944E31628C419A4002A4F14 /* wordadayUITestsLaunchTests.swift */; };
+		894BAB152920BC750028D690 /* To Do in Resources */ = {isa = PBXBuildFile; fileRef = 894BAB142920BC750028D690 /* To Do */; };
+		894BAB172921A2220028D690 /* ExampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BAB162921A2220028D690 /* ExampleDTO.swift */; };
+		897DDA6B28EBD9AF0097E7C0 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DDA6A28EBD9AF0097E7C0 /* GradientBackground.swift */; };
+		897DDA6D28EBDDEC0097E7C0 /* LibraryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DDA6C28EBDDEC0097E7C0 /* LibraryButton.swift */; };
+		897DDA6F28EBDE860097E7C0 /* SquishButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DDA6E28EBDE860097E7C0 /* SquishButtonStyle.swift */; };
+		897DDA7128EBE8570097E7C0 /* WordOfTheDayHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DDA7028EBE8570097E7C0 /* WordOfTheDayHome.swift */; };
+		897DDA7328EBEC270097E7C0 /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DDA7228EBEC270097E7C0 /* WordCard.swift */; };
+		897DDA7528EBF27D0097E7C0 /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 897DDA7428EBF27D0097E7C0 /* Quicksand-VariableFont_wght.ttf */; };
+		897DDA7C28ED2FEF0097E7C0 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 897DDA7B28ED2FEF0097E7C0 /* Quicksand-Bold.ttf */; };
+		898D50AD295BF21800837058 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D50AC295BF21800837058 /* LibraryView.swift */; };
+		898D50B3295E418A00837058 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D50B2295E418A00837058 /* test.swift */; };
+		898D50B5295E606200837058 /* WordAndArrows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D50B4295E606200837058 /* WordAndArrows.swift */; };
+		898D50B7295FBA8B00837058 /* LibraryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D50B6295FBA8B00837058 /* LibraryTestView.swift */; };
+		89A0601229591CE0000676E7 /* WeeklyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A0601129591CE0000676E7 /* WeeklyCalendar.swift */; };
+		89A06014295AA324000676E7 /* WordoftheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A06013295AA324000676E7 /* WordoftheDayViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8944E30728C419A4002A4F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8944E2EE28C419A2002A4F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8944E2F528C419A2002A4F14;
+			remoteInfo = wordaday;
+		};
+		8944E31128C419A4002A4F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8944E2EE28C419A2002A4F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8944E2F528C419A2002A4F14;
+			remoteInfo = wordaday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8929121F28D2C75C00911B6C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8929122428D2C9BE00911B6C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8929122728D2CE9300911B6C /* DefinitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
+		893B87E828DD64340093F32F /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
+		8944E2F628C419A2002A4F14 /* wordaday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordaday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8944E2F928C419A2002A4F14 /* wordadayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordadayApp.swift; sourceTree = "<group>"; };
+		8944E2FD28C419A4002A4F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8944E30028C419A4002A4F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8944E30628C419A4002A4F14 /* wordadayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordadayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8944E30A28C419A4002A4F14 /* wordadayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordadayTests.swift; sourceTree = "<group>"; };
+		8944E31028C419A4002A4F14 /* wordadayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordadayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8944E31428C419A4002A4F14 /* wordadayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordadayUITests.swift; sourceTree = "<group>"; };
+		8944E31628C419A4002A4F14 /* wordadayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordadayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		894BAB142920BC750028D690 /* To Do */ = {isa = PBXFileReference; lastKnownFileType = text; path = "To Do"; sourceTree = "<group>"; };
+		894BAB162921A2220028D690 /* ExampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
+		897DDA6A28EBD9AF0097E7C0 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		897DDA6C28EBDDEC0097E7C0 /* LibraryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryButton.swift; sourceTree = "<group>"; };
+		897DDA6E28EBDE860097E7C0 /* SquishButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishButtonStyle.swift; sourceTree = "<group>"; };
+		897DDA7028EBE8570097E7C0 /* WordOfTheDayHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayHome.swift; sourceTree = "<group>"; };
+		897DDA7228EBEC270097E7C0 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
+		897DDA7428EBF27D0097E7C0 /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		897DDA7728EBF3560097E7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = wordaday/Info.plist; sourceTree = SOURCE_ROOT; };
+		897DDA7B28ED2FEF0097E7C0 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		898D50AC295BF21800837058 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		898D50B2295E418A00837058 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		898D50B4295E606200837058 /* WordAndArrows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAndArrows.swift; sourceTree = "<group>"; };
+		898D50B6295FBA8B00837058 /* LibraryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTestView.swift; sourceTree = "<group>"; };
+		89A0601129591CE0000676E7 /* WeeklyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendar.swift; sourceTree = "<group>"; };
+		89A06013295AA324000676E7 /* WordoftheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordoftheDayViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8944E2F328C419A2002A4F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893B81CA29248ECA00EA0A81 /* DateGrid in Frameworks */,
+				8929122328D2C8C000911B6C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30328C419A4002A4F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30D28C419A4002A4F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8929122628D2CE2600911B6C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8929122428D2C9BE00911B6C /* Endpoint.swift */,
+				8929121F28D2C75C00911B6C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		893B87EC28E2A6920093F32F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				897DDA6E28EBDE860097E7C0 /* SquishButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		8944E2ED28C419A2002A4F14 = {
+			isa = PBXGroup;
+			children = (
+				894BAB142920BC750028D690 /* To Do */,
+				8944E2F828C419A2002A4F14 /* wordaday */,
+				8944E30928C419A4002A4F14 /* wordadayTests */,
+				8944E31328C419A4002A4F14 /* wordadayUITests */,
+				8944E2F728C419A2002A4F14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8944E2F728C419A2002A4F14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8944E2F628C419A2002A4F14 /* wordaday.app */,
+				8944E30628C419A4002A4F14 /* wordadayTests.xctest */,
+				8944E31028C419A4002A4F14 /* wordadayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8944E2F828C419A2002A4F14 /* wordaday */ = {
+			isa = PBXGroup;
+			children = (
+				89A06015295AA36F000676E7 /* WeeklyCalendar */,
+				897DDA7728EBF3560097E7C0 /* Info.plist */,
+				897DDA7628EBF2BD0097E7C0 /* Fonts */,
+				8944E2F928C419A2002A4F14 /* wordadayApp.swift */,
+				893B87EC28E2A6920093F32F /* Style */,
+				897DDA6828EBD8C20097E7C0 /* WordCard */,
+				897DDA6928EBD8DD0097E7C0 /* Components */,
+				8944E32428C419D9002A4F14 /* Models */,
+				8944E32328C419C2002A4F14 /* Views */,
+				8944E2FD28C419A4002A4F14 /* Assets.xcassets */,
+				8944E2FF28C419A4002A4F14 /* Preview Content */,
+			);
+			path = wordaday;
+			sourceTree = "<group>";
+		};
+		8944E2FF28C419A4002A4F14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8944E30028C419A4002A4F14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8944E30928C419A4002A4F14 /* wordadayTests */ = {
+			isa = PBXGroup;
+			children = (
+				8944E30A28C419A4002A4F14 /* wordadayTests.swift */,
+			);
+			path = wordadayTests;
+			sourceTree = "<group>";
+		};
+		8944E31328C419A4002A4F14 /* wordadayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8944E31428C419A4002A4F14 /* wordadayUITests.swift */,
+				8944E31628C419A4002A4F14 /* wordadayUITestsLaunchTests.swift */,
+			);
+			path = wordadayUITests;
+			sourceTree = "<group>";
+		};
+		8944E32328C419C2002A4F14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89A0601129591CE0000676E7 /* WeeklyCalendar.swift */,
+				897DDA7028EBE8570097E7C0 /* WordOfTheDayHome.swift */,
+				898D50AC295BF21800837058 /* LibraryView.swift */,
+				898D50B6295FBA8B00837058 /* LibraryTestView.swift */,
+				89A06013295AA324000676E7 /* WordoftheDayViewModel.swift */,
+				898D50B4295E606200837058 /* WordAndArrows.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8944E32428C419D9002A4F14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8929122628D2CE2600911B6C /* API */,
+				8929122728D2CE9300911B6C /* DefinitionDTO.swift */,
+				894BAB162921A2220028D690 /* ExampleDTO.swift */,
+				893B87E828DD64340093F32F /* WordOfTheDayDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		897DDA6828EBD8C20097E7C0 /* WordCard */ = {
+			isa = PBXGroup;
+			children = (
+				897DDA7228EBEC270097E7C0 /* WordCard.swift */,
+			);
+			path = WordCard;
+			sourceTree = "<group>";
+		};
+		897DDA6928EBD8DD0097E7C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				897DDA6A28EBD9AF0097E7C0 /* GradientBackground.swift */,
+				897DDA6C28EBDDEC0097E7C0 /* LibraryButton.swift */,
+				898D50B2295E418A00837058 /* test.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		897DDA7628EBF2BD0097E7C0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				897DDA7428EBF27D0097E7C0 /* Quicksand-VariableFont_wght.ttf */,
+				897DDA7B28ED2FEF0097E7C0 /* Quicksand-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		89A06015295AA36F000676E7 /* WeeklyCalendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeeklyCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8944E2F528C419A2002A4F14 /* wordaday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8944E31A28C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordaday" */;
+			buildPhases = (
+				8944E2F228C419A2002A4F14 /* Sources */,
+				8944E2F328C419A2002A4F14 /* Frameworks */,
+				8944E2F428C419A2002A4F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wordaday;
+			packageProductDependencies = (
+				8929122228D2C8C000911B6C /* Alamofire */,
+				893B81C929248ECA00EA0A81 /* DateGrid */,
+			);
+			productName = wordaday;
+			productReference = 8944E2F628C419A2002A4F14 /* wordaday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8944E30528C419A4002A4F14 /* wordadayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8944E31D28C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordadayTests" */;
+			buildPhases = (
+				8944E30228C419A4002A4F14 /* Sources */,
+				8944E30328C419A4002A4F14 /* Frameworks */,
+				8944E30428C419A4002A4F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8944E30828C419A4002A4F14 /* PBXTargetDependency */,
+			);
+			name = wordadayTests;
+			productName = wordadayTests;
+			productReference = 8944E30628C419A4002A4F14 /* wordadayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8944E30F28C419A4002A4F14 /* wordadayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8944E32028C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordadayUITests" */;
+			buildPhases = (
+				8944E30C28C419A4002A4F14 /* Sources */,
+				8944E30D28C419A4002A4F14 /* Frameworks */,
+				8944E30E28C419A4002A4F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8944E31228C419A4002A4F14 /* PBXTargetDependency */,
+			);
+			name = wordadayUITests;
+			productName = wordadayUITests;
+			productReference = 8944E31028C419A4002A4F14 /* wordadayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8944E2EE28C419A2002A4F14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8944E2F528C419A2002A4F14 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8944E30528C419A4002A4F14 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8944E2F528C419A2002A4F14;
+					};
+					8944E30F28C419A4002A4F14 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8944E2F528C419A2002A4F14;
+					};
+				};
+			};
+			buildConfigurationList = 8944E2F128C419A2002A4F14 /* Build configuration list for PBXProject "wordaday" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8944E2ED28C419A2002A4F14;
+			packageReferences = (
+				8929122128D2C8C000911B6C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				893B81C829248ECA00EA0A81 /* XCRemoteSwiftPackageReference "DateGrid" */,
+			);
+			productRefGroup = 8944E2F728C419A2002A4F14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8944E2F528C419A2002A4F14 /* wordaday */,
+				8944E30528C419A4002A4F14 /* wordadayTests */,
+				8944E30F28C419A4002A4F14 /* wordadayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8944E2F428C419A2002A4F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8944E30128C419A4002A4F14 /* Preview Assets.xcassets in Resources */,
+				894BAB152920BC750028D690 /* To Do in Resources */,
+				897DDA7528EBF27D0097E7C0 /* Quicksand-VariableFont_wght.ttf in Resources */,
+				8944E2FE28C419A4002A4F14 /* Assets.xcassets in Resources */,
+				897DDA7C28ED2FEF0097E7C0 /* Quicksand-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30428C419A4002A4F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30E28C419A4002A4F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8944E2F228C419A2002A4F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8944E2FA28C419A2002A4F14 /* wordadayApp.swift in Sources */,
+				8929122828D2CE9300911B6C /* DefinitionDTO.swift in Sources */,
+				897DDA7128EBE8570097E7C0 /* WordOfTheDayHome.swift in Sources */,
+				894BAB172921A2220028D690 /* ExampleDTO.swift in Sources */,
+				898D50B5295E606200837058 /* WordAndArrows.swift in Sources */,
+				897DDA6D28EBDDEC0097E7C0 /* LibraryButton.swift in Sources */,
+				893B87E928DD64340093F32F /* WordOfTheDayDTO.swift in Sources */,
+				89A06014295AA324000676E7 /* WordoftheDayViewModel.swift in Sources */,
+				897DDA6B28EBD9AF0097E7C0 /* GradientBackground.swift in Sources */,
+				89A0601229591CE0000676E7 /* WeeklyCalendar.swift in Sources */,
+				898D50B7295FBA8B00837058 /* LibraryTestView.swift in Sources */,
+				8929122528D2C9BE00911B6C /* Endpoint.swift in Sources */,
+				898D50AD295BF21800837058 /* LibraryView.swift in Sources */,
+				898D50B3295E418A00837058 /* test.swift in Sources */,
+				8929122028D2C75C00911B6C /* API.swift in Sources */,
+				897DDA7328EBEC270097E7C0 /* WordCard.swift in Sources */,
+				897DDA6F28EBDE860097E7C0 /* SquishButtonStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30228C419A4002A4F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8944E30B28C419A4002A4F14 /* wordadayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944E30C28C419A4002A4F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8944E31728C419A4002A4F14 /* wordadayUITestsLaunchTests.swift in Sources */,
+				8944E31528C419A4002A4F14 /* wordadayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8944E30828C419A4002A4F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8944E2F528C419A2002A4F14 /* wordaday */;
+			targetProxy = 8944E30728C419A4002A4F14 /* PBXContainerItemProxy */;
+		};
+		8944E31228C419A4002A4F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8944E2F528C419A2002A4F14 /* wordaday */;
+			targetProxy = 8944E31128C419A4002A4F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8944E31828C419A4002A4F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8944E31928C419A4002A4F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8944E31B28C419A4002A4F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "wordaday/Views/WordOfTheDayHome.swift wordaday/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3ZXN7X8G7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wordaday/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordaday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8944E31C28C419A4002A4F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "wordaday/Views/WordOfTheDayHome.swift wordaday/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3ZXN7X8G7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wordaday/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordaday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8944E31E28C419A4002A4F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordadayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wordaday.app/wordaday";
+			};
+			name = Debug;
+		};
+		8944E31F28C419A4002A4F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordadayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wordaday.app/wordaday";
+			};
+			name = Release;
+		};
+		8944E32128C419A4002A4F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordadayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wordaday;
+			};
+			name = Debug;
+		};
+		8944E32228C419A4002A4F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = wordaday/Views/WordOfTheDayHome;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrina.wordadayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wordaday;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8944E2F128C419A2002A4F14 /* Build configuration list for PBXProject "wordaday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8944E31828C419A4002A4F14 /* Debug */,
+				8944E31928C419A4002A4F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8944E31A28C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordaday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8944E31B28C419A4002A4F14 /* Debug */,
+				8944E31C28C419A4002A4F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8944E31D28C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordadayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8944E31E28C419A4002A4F14 /* Debug */,
+				8944E31F28C419A4002A4F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8944E32028C419A4002A4F14 /* Build configuration list for PBXNativeTarget "wordadayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8944E32128C419A4002A4F14 /* Debug */,
+				8944E32228C419A4002A4F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8929122128D2C8C000911B6C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		893B81C829248ECA00EA0A81 /* XCRemoteSwiftPackageReference "DateGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yodagamaheshan/DateGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8929122228D2C8C000911B6C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8929122128D2C8C000911B6C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		893B81C929248ECA00EA0A81 /* DateGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 893B81C829248ECA00EA0A81 /* XCRemoteSwiftPackageReference "DateGrid" */;
+			productName = DateGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8944E2EE28C419A2002A4F14 /* Project object */;
+}

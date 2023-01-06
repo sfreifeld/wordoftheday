@@ -1,0 +1,21 @@
+To Do List
+
+V1. * for V 1.2
+
+Calendar
+    show current week starting with S
+    show current date with circle around number day
+
+Word card
+   X connect API results to wordcard variables
+        * deal with long definitions and sentences
+
+Swipe Buttons
+    animation when swiped
+
+Library Button
+  X  eliminate for V1
+
+Views
+    Center elements.  No hard coding
+

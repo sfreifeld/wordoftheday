@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
+        "version" : "5.6.2"
+      }
+    },
+    {
+      "identity" : "dategrid",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yodagamaheshan/DateGrid.git",
+      "state" : {
+        "revision" : "68378c8276f2d57569fa492188e1d098ea56869b",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
